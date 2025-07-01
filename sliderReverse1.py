@@ -1,3 +1,4 @@
+# target: aHR0cHM6Ly93d3cudmVyaWZ5NS5jb20vZGVtbw==
 import io
 import random
 import re
@@ -229,7 +230,7 @@ async def communicate(this_token):
         pic_addr = [j["data"]['b'], j["data"]['s']]
         bg_image = requests.get(pic_addr[0]).content
         slice_image = requests.get(pic_addr[1]).content
-        res = getDistance(bg_image, slice_image, "./temp_result.jpg")
+        res = getDistance(bg_image, slice_image, "./1_temp_result.jpg")
         dis, n_time = generateSliderTrack(res['target'][0])
 
         req_id = "Req_" + n_time + "1"  # 重新获取时间戳
