@@ -1,4 +1,4 @@
-import io
+# target: aHR0cHM6Ly9pLmVhc3Rtb25leS5jb20vd2Vic2l0ZWNhcHRjaGEvc2xpZGVydmFsaWQ=
 import json
 import math
 import random
